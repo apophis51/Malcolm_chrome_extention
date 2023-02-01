@@ -1,0 +1,27 @@
+
+
+{
+    "manifest_version": 3,
+    "name": "MatrixMalcolmHack",
+    "version": "1.0",
+    "description": "Loads A Matrix Background into Any Page You Visit",
+
+    "content_scripts": [
+      {
+        "js": [
+          "hack.js"
+        ],
+        "matches": [
+          "https://*/*"
+        ]
+      }
+    ],
+
+    "web_accessible_resources": [
+      {
+        "resources": [ "*.jpg" ],
+        "matches": [ "https://*/*" ]
+      }
+    ]
+  }
+  
